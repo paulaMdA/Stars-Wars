@@ -1,0 +1,137 @@
+@font-face {
+    font-family: STARWARS;
+    src: url("./../recursos/STARWARS.ttf");
+}
+
+*{
+    font-family: STARWARS;
+    color: goldenrod;
+}
+
+body{
+    background-image: url('./../recursos/bg.png');
+    width: 100%;
+}
+
+.app{
+    display: flex;
+    align-items: center;
+}
+
+.caracteristicas h1 {
+    font-size: 70px; /* Tamaño de fuente más grande */
+    text-align: center;
+}
+
+.cartas{
+    display: flex;
+    flex-direction: row;
+    padding: 1vh;
+    width: 50%
+}
+
+.carta h3{
+    margin-top: 1.5vh;
+    font: 1vh;
+    text-align: center;
+}
+
+.carta{
+    text-align: center;
+    background-image: url("./../recursos/card_bg.jpg");
+    height: 35vh;
+    width: 20vh;
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items: center;
+    border-radius: 7%;
+    margin: 1vh;
+    box-shadow: 0px 0px 60px 1px;
+    border: 1px solid black;
+}
+
+.carta img{
+    margin-top: 3vh;
+    width: 12vh;
+    border-radius: 7%;
+    color:  goldenrod;
+    box-shadow: 5px 5px 10px;
+}
+
+.personaje table,
+.personaje table.peliculas-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    
+}
+
+.personaje th,
+.personaje td,
+.personaje th,
+.personaje td {
+    padding: 8px;
+    border: 1px solid #dddddd;
+    text-align: left;
+}
+
+#chewbacca{
+    transform: translateX(150px) translateY(50px) rotate(-30deg);
+}
+
+#darth-vader{
+    transform: translateX(80px) translateY(20px) rotate(-20deg);
+}
+
+#yoda{
+    transform: translateX(-150px) translateY(50px) rotate(30deg);
+    z-index: 0;
+}
+
+#c-3po{
+    transform: translateX(-80px) translateY(20px) rotate(15deg);
+    z-index: 1;
+}
+
+#r2-d2{
+    z-index: 5;
+    transform: translateY(-10px);
+}
+
+#chewbacca:hover{
+    transform: translateX(150px) translateY(50px) rotate(-30deg) scale(1.2);
+    z-index: 10;
+    cursor: pointer;
+}
+
+#darth-vader:hover{
+    transform: translateX(80px) translateY(20px) rotate(-20deg) scale(1.2);
+    z-index: 10;
+    cursor: pointer;
+}
+
+#r2-d2:hover{
+    transform: translateY(-10px) scale(1.2);
+    cursor: pointer;
+}
+
+#c-3po:hover{
+    transform: translateX(-80px) translateY(20px) rotate(15deg) scale(1.2);
+    z-index: 10;
+    cursor: pointer;
+}
+
+#yoda:hover{
+    transform: translateX(-150px) translateY(50px) rotate(30deg) scale(1.2);
+    z-index: 10;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
